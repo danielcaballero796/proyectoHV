@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+</head>
+<body style="background: #BBDEFB">
+
+        <div class="container" style="margin-right: auto;margin-left: auto;margin-bottom: 6px;margin-top: 0px; background: #EEEEEE">
+                <div id="titulo" style="border:solid black 2px; border:solid black 2px;margin-left: 6px;margin-right: 6px;margin-top: 6px;margin-bottom: 6px;">
+                <nav class="navbar navbar-expand-lg col-md-12">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
+                        <figure style="margin-left: 5px;margin-right: 20px;margin-top: 5px;margin-bottom: 5px;">
+                        <img src="./img/logo.png" alt="" height="100" width="100">
+                        </figure>
+                        <h1> Hoja de vida de Daniel José Caballero Sánchez</h1>
+                    </div>
+                </nav>
+                </div>
+        
+                <!--Menu-->
+                <div id="menu" style="float:right;border:black solid 2px;margin-right: 6px;margin-left: 6px;margin-bottom: 6px;margin-top: 0px;">
+                <nav class="navbar navbar-expand-lg col-md-12" style="padding-top: 0px; padding-bottom: 0px;">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active" style="border-right: solid black 2px">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item active" style="border-right: solid black 2px">
+                            <a class="nav-link" href="conocimientos.html">Conocimientos</a>
+                            </li>
+                            <li class="nav-item active" style="border-right: solid black 2px">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item active">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>    
+                    </div>
+                </nav>
+                </div>
+                <br><br>
+        
+                <!--cuerpo-->
+                    <div class="album py-5 bg-light">
+                        <div class="container">
+                
+                          <div class="row">
+                              <!--Proyecto CCM-->
+                            <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                    <img class="card-img-top" alt="Proyecto Cuenta Conmigo" style="height: 225px; width: 100%; display: block;" src="./img/proyectoCCM.jpg" data-holder-rendered="true">
+                                    <div class="card-body">
+                                        <p class="card-text">Cuenta Conmigo es un proyecto para la gestion de las asesorias de un docente en especifico, se encuentra hecho en Laravel.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">hace 3 meses</small>
+                                        <a href="https://github.com/danielcaballero796/cuentaconmigo"><img src="./img/github.svg" style="height: 40px; width: 40px; display: block;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Proyecto SoonPay-->
+                            <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                    <img class="card-img-top" alt="Proyecto Cuenta Conmigo" style="height: 225px; width: 100%; display: block;" src="./img/proyectoSoonPay.jpg" data-holder-rendered="true">
+                                    <div class="card-body">
+                                        <p class="card-text">SoonPay es un sistema para llevar el control de pagos realizados por prestamos monetarios a personas, realizado con Laravel. </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">hace 6 meses</small>
+                                        <a href="https://github.com/danielcaballero796/soonpay"><img src="./img/github.svg" style="height: 40px; width: 40px; display: block;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                  <!--Proyecto Valzu-->
+                            <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                    <img class="card-img-top" alt="Proyecto Cuenta Conmigo" style="height: 225px; width: 100%; display: block;" src="./img/proyectoValzu.jpg" data-holder-rendered="true">
+                                    <div class="card-body">
+                                        <p class="card-text">Este es un sistema que permite la gestion de inventariado de la empresa de calzado Valzu, realizado con el patron MVC.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">hace 1 año y 1 mes</small>
+                                        <a href="https://github.com/danielcaballero796/valzu"><img src="./img/github.svg" style="height: 40px; width: 40px; display: block;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!--Proyecto SAT-->
+                            <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                    <img class="card-img-top" alt="Proyecto Cuenta Conmigo" style="height: 225px; width: 100%; display: block;" src="./img/proyectoSAT.jpg" data-holder-rendered="true">
+                                    <div class="card-body">
+                                        <p class="card-text">SAT es un sistema que permite gestionar el control de turnos para cualquier dependencia localizada en la Universidad Francisco de Paula Santander, realizado como una API Rest con Laravel para el backend y Vue para el frontend .</p>
+                                        <small class="text-muted">Colaboradores: Gerson Guerrero, Andres Rodriguez</small>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">hace 11 meses</small>
+                                        <a href="https://github.com/danielcaballero796/sat"><img src="./img/github.svg" style="height: 40px; width: 40px; display: inline;"></a>
+                                        <a href="https://github.com/danielcaballero796/satFrontEnd.io"><img src="./img/github.svg" style="height: 40px; width: 40px; display: inline;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Proyecto ControlAsistencia-->
+                            <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                    <img class="card-img-top" alt="Proyecto Cuenta Conmigo" style="height: 225px; width: 100%; display: block;" src="./img/proyectoControlAsistencias.jpg" data-holder-rendered="true">
+                                    <div class="card-body">
+                                        <p class="card-text">Control de Asistencias como su nombre lo dice permite llevar el control de las horas realizadas por los becatrabajo en una dependencia en especifico, realizado con el patron MVC.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">hace 1 año y 2 meses</small>
+                                        <a href="https://github.com/danielcaballero796/sistemaAsistencias"><img src="./img/github.svg" style="height: 40px; width: 40px; display: inline;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Proyecto GrandSlam-->
+                            <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                    <img class="card-img-top" alt="Proyecto Cuenta Conmigo" style="height: 225px; width: 100%; display: block;" src="./img/proyectoGrandSlam.jpg" data-holder-rendered="true">
+                                    <div class="card-body">
+                                        <p class="card-text">Es un proyecto el cual semeja el sistema de torneo del GrandSlam en el cual se pueden hacer todo el registro de partidos, jugadores y arbitros, realizado con el patron MVC.</p>
+                                        <small class="text-muted">Colaborador: Gino Amaury</small>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">hace 1 año y 4 meses</small>
+                                        <a href="https://github.com/danielcaballero796/proyectoBD"><img src="./img/github.svg" style="height: 40px; width: 40px; display: inline;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                  
+                          </div>
+                        </div>
+                      </div>    
+        </div>
+                <!--Pie-->
+                <footer class="text-muted" style="margin-right: 105px;margin-left: 105px; background: #EEEEEE">
+                        <div class="container">
+                                <div class="container">
+                                        <a href="https://www.facebook.com/danielcaballero05">Facebook</a>
+                                        <a href="twitter.com/DaniiSnchz96">Twitter</a>
+                                        <a href="glosario.html">Glosario</a>
+                                    </div>
+                        </div>
+                </footer>
+
+</body>
+</html>

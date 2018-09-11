@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <!--SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body style="background: #BBDEFB">
+
+        <div class="container" style="margin-right: auto;margin-left: auto;margin-bottom: 6px;margin-top: 0px; background: #EEEEEE">
+                <div id="titulo" style="border:solid black 2px; border:solid black 2px;margin-left: 6px;margin-right: 6px;margin-top: 6px;margin-bottom: 6px;">
+                <nav class="navbar navbar-expand-lg col-md-12">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
+                        <figure style="margin-left: 5px;margin-right: 20px;margin-top: 5px;margin-bottom: 5px;">
+                        <img src="./img/logo.png" alt="" height="100" width="100">
+                        </figure>
+                        <h1> Hoja de vida de Daniel José Caballero Sánchez</h1>
+                    </div>
+                </nav>
+                </div>
+        
+                <!--Menu-->
+                <div id="menu" style="float:right;border:black solid 2px;margin-right: 6px;margin-left: 6px;margin-bottom: 6px;margin-top: 0px;">
+                <nav class="navbar navbar-expand-lg col-md-12" style="padding-top: 0px; padding-bottom: 0px;">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active" style="border-right: solid black 2px">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item active" style="border-right: solid black 2px">
+                            <a class="nav-link" href="conocimientos.html">Conocimientos</a>
+                            </li>
+                            <li class="nav-item active" style="border-right: solid black 2px">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item active">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>    
+                    </div>
+                </nav>
+                </div>
+                <br><br>
+        
+
+                <!--cuerpo-->
+                <div class="container">
+                <center>
+                    <h1 class="txt-center">Contacta Conmigo</h1>
+                </center>
+
+                <form action="#" id="formcontacto" method="post" class="">
+
+                    <div class="form-group">
+                        <label>Nombre *</label> <br/>
+                        <input type="text" name="nombre" id="nombre" size="70" class="form-control" required/>
+                    </div>
+
+                    <div class="form-group">
+                            <label>Correo *</label> <br/>
+                            <input type="email" name="correo" id="correo" value="" size="60" class="form-control" placeholder="ejemplo@ejemplo.com" required/>
+                    </div>
+
+                    <div class="form-group">
+                            <label>telefono *</label> <br/>
+                            <input type="text" name="telefono" id="telefono" value="" size="20" class="form-control" maxlength="10" placeholder="3123456789" required pattern="[0-9]+"/>
+                    </div>
+
+                    <div class="form-group">
+                            <label>Fecha de Nacimiento *</label> <br/>
+                            <input type="date" name="fecha" id="fecha" value="" size="150" class="form-control" required/>
+
+                    </div>
+
+                    <div class="form-group">
+                            <label>Comentario *</label> <br/>
+                            <textarea name="comentario" id="comentario" value="" size="150" class="form-control" required></textarea>
+
+                    </div>
+                
+                    <p><em>* Campos obligatorios.</em></p>
+                    <button type="button" class="btn btn-danger" id="btnborrar">Borrar</button>
+                    <button type="submit" class="btn btn-primary" id="btnenviar">Enviar Mensaje</button>
+                </form>
+                </div><br><br>
+        </div>
+                <!--Pie-->
+                <footer id="pie" class="text-muted" style="margin-right: 105px;margin-left: 105px; background: #EEEEEE">
+                        <div class="container">
+                            <a href="https://www.facebook.com/danielcaballero05">Facebook</a>
+                            <a href="twitter.com/DaniiSnchz96">Twitter</a>
+                            <a href="glosario.html">Glosario</a>
+                        </div>
+                </footer>
+
+            <script src="./js/contacto.js"></script>
+</body>
+</html>

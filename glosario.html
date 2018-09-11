@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+</head>
+<body style="background: #BBDEFB">
+    <div class="container" style="margin-right: auto;margin-left: auto;margin-bottom: 6px;margin-top: 0px;background: white">
+        <div id="titulo" style="border:solid black 2px; border:solid black 2px;margin-left: 6px;margin-right: 6px;margin-top: 6px;margin-bottom: 6px;">
+        <nav class="navbar navbar-expand-lg col-md-12">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
+                <figure style="margin-left: 5px;margin-right: 20px;margin-top: 5px;margin-bottom: 5px;">
+                <img src="./img/logo.png" alt="" height="100" width="100">
+                </figure>
+                <h1> Hoja de vida de Daniel José Caballero Sánchez</h1>
+            </div>
+        </nav>
+        </div>
+
+        <!--Menu-->
+        <div id="menu" style="float:right;border:black solid 2px;margin-right: 6px;margin-left: 6px;margin-bottom: 6px;margin-top: 0px;">
+        <nav class="navbar navbar-expand-lg col-md-12" style="padding-top: 0px; padding-bottom: 0px;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active" style="border-right: solid black 2px">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active" style="border-right: solid black 2px">
+                    <a class="nav-link" href="conocimientos.html">Conocimientos</a>
+                    </li>
+                    <li class="nav-item active" style="border-right: solid black 2px">
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>    
+            </div>
+        </nav>
+        </div>
+        <br><br><br>
+
+        <!--Cuerpo-->
+        <div id="cuerpo" style="margin-right: 6px;margin-left: 6px;">
+                
+                <table class="table table-striped ">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th scope="col">Palabra</th>
+                            <th scope="col">Definicion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><a href="https://platzi.com/blog/que-es-frontend-y-backend/">Backend</a></th>
+                            <th>Backend es la capa de acceso a datos de un software o cualquier dispositivo, que no es directamente 
+                                accesible por los usuarios, además contiene la lógica de la aplicación que maneja dichos datos. 
+                                El Backend también accede al servidor, que es una aplicación especializada que entiende la forma como 
+                                el navegador solicita cosas.</th>
+                        </tr>
+                        <tr>
+                            <th><a href="https://www.codeigniter.com/">CodeIgniter</a></th>
+                            <th>Es un potente framework de PHP con un tamaño muy reducido, diseñado para desarrolladores que necesitan un
+                                 conjunto de herramientas simple y elegante para crear aplicaciones web completas.</th>
+                        </tr>
+                        <tr>
+                            <th><a href="http://www.lsi.us.es/~javierj/investigacion_ficheros/Framework.pdf">Framework</a></th>
+                            <th>Nos estamos refiriendo a una estructura software compuesta de componentes 
+                                personalizables e intercambiables para el desarrollo de una aplicación.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><a href="https://platzi.com/blog/que-es-frontend-y-backend/">Frontend</a></th>
+                            <th>Frontend es la parte de un programa o dispositivo a la que un usuario puede acceder directamente. 
+                                Son todas las tecnologías de diseño y desarrollo web que corren en el navegador y que se encargan de
+                                la interactividad con los usuarios.</th>
+                        </tr>
+                        <tr>
+                            <th><a href="https://www.java.com/es/download/faq/whatis_java.xml">Java</a></th>
+                            <th>Java es un lenguaje de programación y una plataforma informática comercializada por primera vez en 1995 
+                                por Sun Microsystems. Hay muchas aplicaciones y sitios web que no funcionarán a menos que tenga Java 
+                                instalado y cada día se crean más. Java es rápido, seguro y fiable. Desde portátiles hasta centros de 
+                                datos, desde consolas para juegos hasta súper computadoras, desde teléfonos móviles hasta Internet, 
+                                Java está en todas partes.</th>
+                        </tr>
+                        <tr>
+                            <th><a href="http://roa.ult.edu.cu/bitstream/123456789/440/1/introduccion_javascript.pdf">JavaScript</a></th>
+                            <th>JavaScript es un lenguaje de programación que se utiliza principalmente para crear
+                                    páginas web dinámicas, es un lenguaje de programación interpretado, por lo que no es
+                                    necesario compilar los programas para ejecutarlos.</th>
+                        </tr>
+                        <tr>
+                            <th><a href="https://es.wikipedia.org/wiki/Laravel">Laravel</a></th>
+                            <th>es un framework de código abierto para desarrollar aplicaciones y servicios web 
+                                    con PHP. Su filosofía es desarrollar código PHP de forma elegante y simple, evitando
+                                     el "código espagueti". Fue creado en 2011</th>
+                        </tr>
+                        <tr>
+                            <th><a href="http://revistatelematica.cujae.edu.cu/index.php/tele/article/view/15">MVC</a></th>
+                            <th>El patrón (MVC) surge con el objetivo de reducir el esfuerzo de programación, necesario en la implementación
+                                de sistemas múltiples y sincronizados de los mismos, un paradigma que divide las partes que conforman una
+                                aplicación en el Modelo, las Vistas y los Controladores, permitiendo la implementación por separado, 
+                                garantizando así la actualización y mantenimiento del software de forma sencilla y en un reducido espacio de tiempo.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><a href="http://php.net/manual/es/intro-whatis.php">PHP</a></th>
+                            <th>Un acronimo de Preprocesador de hipertexto php es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede 
+                                ser incrustado en HTML.</th>
+                        </tr>
+                       
+                        <tr>
+                            <th><a href="https://devcode.la/blog/que-es-sql/">SQL</a></th>
+                            <th>es un lenguaje estándar e interactivo de acceso a bases de datos relacionales que permite especificar
+                                 diversos tipos de operaciones en ellas, gracias a la utilización del álgebra y de cálculos relacionales,
+                                 el SQL brinda la posibilidad de realizar consultas con el objetivo de recuperar información de las bases
+                                 de datos de manera sencilla. </th>
+                        </tr>
+                        
+                        <tr>
+                            <th><a href="http://tareazdec.galeon.com/VisualBasic.pdf">Visual Basic</a></th>
+                            <th>Es un lenguaje de programación visual, también llamado lenguaje de 4ª
+                                    generación. Esto quiere decir que un gran número de tareas se realizan sin escribir 
+                                    código,simplemente con operaciones gráficas realizadas con el ratón sobre la
+                                    pantalla
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+        </div>
+        <br><br>
+    </div>
+    <!--Pie-->
+    <footer class="text-muted" style="margin-right: 112px;margin-left: 112px; background: #EEEEEE">
+            <div class="container">
+                <div class="container">
+                    <a href="https://www.facebook.com/danielcaballero05">Facebook</a>
+                    <a href="twitter.com/DaniiSnchz96">Twitter</a>
+                    <a href="glosario.html">Glosario</a>
+                </div>
+            </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+</body>
+</html>
